@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Burgerheaven</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+    </head>
+    <body>
+    <section>
+    <header id="pagetop">
+    <h1 id="pagetitle">Välkommen till BurgerHell </h1>
+        <img id="titlepic" src="public/img/wallpap.jpg" style="width: 1350px">
+        <h2> Här kan du välj din burger</h2>
+    </header>
+    </section>
+    <main>
+        <section id="orders">
+            <div class="Burgertypes">
+            <div class="burger a">
+            <h3>Burger</h3>
+            <img src="public/img/burger1.png" style="width: 350px">
+                <ul>
+                    <li>Contains <span class="allergens"> gluten </span> and <span class="allergens"> meat </span> of some sort</li>
+                    <li>Good flavour, so I've heard</li>
+                    <li>Not eligible for discounts</li>
+                </ul>
+            </div>
+            <div class="burger b">
+            <h3>Cheezy surprise</h3>
+            <img src="public/img/burger2.JPG" style="width: 350px">
+                <ul>
+                    <li>Contains <span class="allergens"> gluten </span> and <span class="allergens"> meat </span> of some sort</li>
+                    <li>Taste like cheese with burger</li>
+                    <li>Not eligible for discounts</li>
+                </ul>
+            </div>
+            <div class="burger c">
+            <h3>Frutti Di Mare</h3>
+            <img src="public/img/burger3.jpg" style="width: 350px">
+                <ul>
+                    <li>Contains <span class="allergens"> gluten </span> and catch of the day (<span class="allergens"> fish </span>)</li>
+                    <li>May contain <span class="allergens"> mercury </span></li>
+                    <li>Not eligible for discounts</li>
+                </ul>
+            </div>
+            <div class="burger d">
+            <h3>Vegan delight</h3>
+            <img src="public/img/burger 4.png" style="width: 350px">
+                <ul>
+                    <li>Cruelty-free (vegan)</li>
+                    <li>Fiber over flavour</li>
+                    <li>Not eligible for discounts</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <section>
+            <section id="contact">
+                <h2> Customer Information </h2>
+                <form>
+                    <p>
+                        <label for="name">Full name</label><br>
+                        <input type="text" id="name" name="fn" required="required" placeholder="First- and last name">
+                    </p>
+                    <p>
+                        <label for="Street">Street name</label><br>
+                        <input type="text" id="Street" name="strt" placeholder="Street">
+                    </p>
+                    <p>
+                        <label for="Houseno">House number</label><br>
+                        <input type="number" id="Houseno" name="strt" placeholder="House number" >
+                    </p>
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                    </p>
+                    <p>
+                        <label for="Payment">Payment method</label>
+                        <select id="Payment" name="rcp">
+                            <option>Card</option>
+                            <option>Bank Account</option>
+                            <option>Swish</option> selected="selected"
+                            <option>Wire Transfer</option>
+                            <option>Mail us cash in a box</option>
+                        </select>
+                    </p>
+                    <p id=form-prompt>Gender</p>
+                    <input type="radio" id="Male" name="age" value="Male">
+                    <label for="Male">Male</label><br>
+                    <input type="radio" id="Female" name="age" value="Female">
+                    <label for="Female">Female</label><br>
+                    <input type="radio" id="NIL" name="age" value="NIL">
+                    <label for="NIL">Prefer not to say</label>
+                </form>
+                <button type="submit">
+                    <img src="public/img/sendbutton.png" style="width: 100px">
+                </button>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        End notes
+    </footer>
+    </body>
+
+</html>

@@ -2,7 +2,16 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}:
+          <ul>
+            <li v-for="(amount, name) in order.orderItems" :key="name">
+              <p>{{ name }}: {{ amount }}</p>
+            </li>
+          </ul>
+          <p>Name: {{order.personalInfo.name}}</p>
+          <p>Email: {{order.personalInfo.email}}</p>
+          <p>Gender: {{order.personalInfo.gender}}</p>
+          <p>Payment: {{order.personalInfo.payment}}</p>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -29,6 +38,11 @@
         this.orders = data.orders);
     },
     methods: {
+      toArray: function(obj) {
+        var result = Object.values(obj);
+        return 
+          result;
+      },
       clearQueue: function () {
         socket.emit('clearQueue');
       },

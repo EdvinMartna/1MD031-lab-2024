@@ -1,21 +1,41 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Burger", 
+    "kCal": 300, 
+    "url": "public/img/burger1.png",
+    "gluten": true, 
+    "meat": true,
+    "info": ["Standard issue burger",
+    "Good flavour",
+    "Not eligible for discounts"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Cheezy Surprise", 
+    "kCal": 300, 
+    "url": "public/img/burger2.JPG",
+    "gluten": true, 
+    "meat": true,
+    "info": ["Now with more cheese",
+    "Taste like cheese with burger",
+    "Not eligible for discounts"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Frutti Di Mare", 
+    "kCal": 300, 
+    "url": "public/img/burger3.jpg",
+    "gluten": true, 
+    "meat": false,
+    "info": ["With catch of the day (one fish)",
+    "May contain mercury",
+    "Not eligible for discounts"]
+}
+,
+{
+    "name": "Vegan Delight", 
+    "kCal": 300, 
+    "url": "public/img/burger 4.png",
+    "gluten": false, 
+    "meat": false,
+    "info": ["Cruelty-free (vegan)",
+    "Fiber over flavour",
+    "Not eligible for discounts"]
 }]
